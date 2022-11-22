@@ -94,7 +94,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
   left: 0px;
   z-index: 1000;
-  display: none;
 }
 .userCard__background .player {
   background-color: rgba(0, 85, 165, 0.9607843137);

@@ -7,9 +7,6 @@
    font-weight:  700;
 }
 
-.content {
-
-}
 
 //...Карточки игроков...//
 .cards {
@@ -29,7 +26,7 @@
    top: 0px;
    left: 0px;
    z-index: 1000;
-   display: none;
+   // display: none;
 
    .player {
       background-color: #0055a5f5;
