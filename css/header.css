@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .menu .menu__list .menu__link:hover {
   transition: 0.4s;
   background-color: #1a81e2;
-  padding: 15px 59px 16px;
+  padding: 17px 60px 17px;
   color: rgb(248, 248, 248);
 }
 
