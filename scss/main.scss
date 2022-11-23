@@ -1,6 +1,4 @@
-@import 'header.scss';
-@import 'common.scss';
-@import 'footer.scss';
+
 
 @mixin Arrows {
     width: 50px;
@@ -55,7 +53,7 @@
 .slide {
 	width: 100vw;
     height: calc(100vh - 220px);
-    background-image: url(../img/stadium.jpg);
+    background-image: url(../img/grozny-226.jpg);
     background-size: cover;
     background-position: 50% 20%;
     .slide_text {

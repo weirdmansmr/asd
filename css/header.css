@@ -89,11 +89,21 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.header .header__logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header__logo img {
+  width: 120px;
 }
 .header .menu {
   width: 1200px;
   height: 50px;
-  background-color: rgba(0, 85, 165, 0.7803921569);
+  background-color: #2e227a;
   line-height: 50px;
 }
 .header .menu .menu__list {

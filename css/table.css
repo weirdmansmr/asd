@@ -5,6 +5,7 @@
 .table {
   display: flex;
   margin: 20px;
+  height: 100px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -24,8 +25,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  left: 5%;
   font-size: 1rem;
-  width: 300px;
   font-family: Timer;
 }
 .table_date .date {
@@ -61,4 +63,18 @@
 .table_score .table_team {
   font-weight: 700;
   color: #0959a1;
+}
+
+.table__champ {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  font-family: monospace;
+  right: 5%;
+  font-size: 1rem;
+}
+.table__champ p {
+  margin: 3px;
 }
