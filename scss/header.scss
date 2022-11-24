@@ -13,14 +13,17 @@ $colorHead: #2e227a;
    box-shadow: 0px 0px 50px rgb(163, 163, 163);
    position: relative;
    z-index: 2;
-   background-image: url('/img/1644333089_17-phonoteka-org-p-poligonalnii-fon-belii-19.jpg');
-
+   background-image: url('/img/back-header.jpg');
+   @media (max-width: 1200px) {
+      display: none;
+   }
    .header__container {
       display: flex;
       align-items: center;
       flex-direction: column;
       height: 100%;
       justify-content: space-between;
+      
    }
    .header__logo {
       height: 100%;
@@ -33,7 +36,7 @@ $colorHead: #2e227a;
    .menu {
       width: 1200px;
       height: 50px;
-      background-color: #0054a5;
+      background-color: #2e227a;
       line-height: 50px;
       .menu__list {
          display: flex;
@@ -101,4 +104,47 @@ $colorHead: #2e227a;
 }
 .hover__command:hover .dropmenu__main {
    display: flex;
+}
+
+//мобильная версия
+.header__mobile {
+   height: 50px;
+   box-shadow: 0px 0px 50px rgb(163, 163, 163);
+   position: relative;
+   z-index: 2;
+   background-image: url('/img/back-header.jpg');
+   font-family: 'FuturaDemic';
+   text-transform: uppercase;
+   img {
+      width: 40px;
+      margin: 0 20px;
+      position: absolute;
+      right: 0;
+      top: 5px;
+      transition: .4s;
+      &:active {
+         transform: rotateZ(180deg);
+      }
+   }
+   a {
+      color: #ffffff;
+   }
+   @media (min-width: 1201px) {
+      display: none;
+   }
+}
+
+.menu__mobile {
+   height: calc(100% - 50px);
+   width: 100%;
+   background-color: #0054a5;
+   position: fixed;
+   bottom: 0;
+   .mobile__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+   }
 }
