@@ -83,6 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   height: 200px;
   box-shadow: 0px 0px 50px rgb(163, 163, 163);
+  position: relative;
+  z-index: 2;
   background-image: url("/img/1644333089_17-phonoteka-org-p-poligonalnii-fon-belii-19.jpg");
 }
 .header .header__container {
@@ -103,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .menu {
   width: 1200px;
   height: 50px;
-  background-color: #2e227a;
+  background-color: #0054a5;
   line-height: 50px;
 }
 .header .menu .menu__list {
@@ -117,12 +119,12 @@ h1, h2, h3, h4, h5, h6 {
 .header .menu .menu__list .menu__link {
   color: rgb(255, 255, 255);
   padding: 15px 59px 16px;
+  transition: 0.2s;
   width: 70px;
 }
 .header .menu .menu__list .menu__link:hover {
-  transition: 0.4s;
   background-color: #1a81e2;
-  padding: 17px 60px 17px;
+  padding: 15px 59px 16px;
   color: rgb(248, 248, 248);
 }
 
@@ -149,13 +151,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.568);
   border-top: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.2s;
 }
 .dropmenu__main .link:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 .dropmenu__main .link:hover {
-  transition: 0.4s;
   background-color: #0054a5;
   color: rgb(255, 255, 255);
   border-bottom: 1px solid rgba(255, 255, 255, 0.568);

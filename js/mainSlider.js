@@ -1,3 +1,4 @@
+
 let slideList = document.getElementById("slideWrap");
 
 for (i = 5; i > 0; i--) {
@@ -65,4 +66,3 @@ let responsiveSlider = function() {
 window.onload = function() {
 	responsiveSlider();  
 }
-

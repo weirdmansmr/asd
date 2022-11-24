@@ -8,15 +8,18 @@
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/header.css">
    <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
    <div class="wrapper">
       <div class="container">
          <header class="header">
             <div class="header__container">
-               <div class="header__logo">
-                  <img src="./img/logo.png" width="150px" alt="">
-               </div>
+
+               <a href="./index.html" class="header__logo">
+                  <img src="./img/logo.png" width="150px">
+               </a>
                <nav class="menu">
                   <ul class="menu__list">
                      <li class="hover__main">
@@ -45,21 +48,15 @@
                </nav>
             </div>
          </header>
-
-         <div id="slider">
-            <ul id="slideWrap"> 
-                 
-            </ul>
-            <a id="prev" href="#">&#8810;</a>
-            <a id="next" href="#">&#8811;</a>
-         </div>
-      
-         <div class="gallery">
-            <h2>Галерея клуба</h2>
-            <div class="photos">
-               
+         <main class="content">
+            <div class="container">
+               <div class="gallery">
+                  <h2>Галерея клуба</h2>
+                  <div class="photos">
+                  </div>
+               </div>
             </div>
-         </div>
+         </main>
       </div>
    </div>
    <script src="./js/mainSlider.js"></script>
