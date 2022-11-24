@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Timer;
+  src: url(../fonts/CursedTimer/CursedTimerUlil-Aznm.ttf);
+}
+.table {
+  display: flex;
+  margin: 20px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.home {
+  background-color: #cff4fc;
+}
+
+.visitor {
+  background-color: #fff3cd;
+}
+
+.table_date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 5%;
+  font-size: 1rem;
+  font-family: Timer;
+}
+.table_date .date {
+  margin: 5px 0;
+}
+.table_date .time {
+  margin: 0;
+}
+.table_date span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.table_score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table_score .table_img {
+  width: 80px;
+  margin: 0 10px;
+}
+.table_score .tablo {
+  font-family: Timer;
+  font-size: 2rem;
+}
+.table_score .tablo .win {
+  color: #0f5132;
+}
+.table_score .tablo .lose {
+  color: #842029;
+}
+.table_score .table_team {
+  font-weight: 700;
+  color: #0959a1;
+}
+
+.table__champ {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  font-family: monospace;
+  right: 5%;
+  font-size: 1rem;
+}
+.table__champ p {
+  margin: 3px;
+}

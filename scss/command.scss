@@ -1,0 +1,203 @@
+@import 'null-style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@font-face {
+   font-family: 'College';
+   src: url('../fonts/college/collegeb.ttf');
+   font-style: normal;
+   font-weight:  700;
+}
+
+
+//...Карточки игроков...//
+.cards {
+   display: grid;
+   justify-items: center;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   padding-top: 30px;
+}
+
+.userCard__background {
+   background-color: rgba(63, 62, 62, 0.253);
+   width: 100%;
+   height: 1500px;
+   display: none;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 1000;
+   // display: none;
+
+   .player {
+      background-color: #0055a5f5;
+      width: 1200px;
+      height: 900px;
+      border-radius: 20px;
+      margin: auto;
+      color: white;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 20px 30px;
+
+      h2 {
+         margin-top: 20px;
+         font-size: 45px;
+         font-family: 'Futurademic';
+         text-transform: uppercase;
+         img {
+            border: 2px solid rgb(255, 255, 255);
+         }
+      }
+      p {
+         font-size: 35px;
+         font-family: 'Futurademic';
+         margin: 15px 0px 20px 10px;
+      }
+      .player__content{
+         display: flex;
+         img{
+            border: 3px solid rgb(0, 0, 0);
+            width: 400px;
+            margin-left: 50px;
+            background-color: white;
+         }
+
+         .player__text {
+            margin: 20px 0px 0px 15px;
+            h2 {
+               font-family: 'College';
+               font-size: 100px;
+               letter-spacing: -6px;
+               font-family: 700;
+            }
+
+            p:nth-child(2) {
+               font-family: monospace;
+               font-weight: 700;
+               font-size: 40px;
+               text-transform: uppercase;
+            }
+            
+            p:nth-child(3) {
+               font-family: monospace;
+               font-weight: 400;
+               font-size: 15px;
+               line-height: 20px;
+               text-transform: uppercase;
+            }
+                        
+            p:nth-child(4) {
+               font-family: monospace;
+               font-weight: 400;
+               font-size: 15px;
+               line-height: 20px;
+               text-transform: uppercase;
+            }
+            p:nth-child(5) {
+               font-family: monospace;
+               font-weight: 400;
+               font-size: 15px;
+               line-height: 20px;
+               text-transform: uppercase;
+            }
+         }
+      }
+   }
+   .close__cross {
+      width: 50px;
+      height: 50px;
+      background-color: #0055a56b;
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 70px;
+      left: 1700px;
+
+      &:hover {
+         font-size: 60px;
+         background-color: #0055a593;
+      }
+      img {
+         transition: 0.1s;
+         &:hover {
+            width: 45px;
+            transform: scale(1.1);
+         }
+      }
+   }
+}
+.card {
+   width: 300px;
+   height: 380px;
+   border-radius: 20px;
+   margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition: .2s;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 0px 30px rgba(117, 117, 117, 0.678);
+
+   &:hover {
+       transform: scale(1.1, 1.1);
+       
+   }
+   &:hover .photo {
+       border-radius: 20px;
+       transition: 0;
+
+       background-color: rgb(255, 255, 255);
+       width: 300px;
+       padding-top: 15px;
+       padding-bottom: 15px;
+
+   }
+
+   .photo {
+       border-radius: 20px;
+       width: 300px;
+       transition: .2s;
+       background-color: white;
+   }
+   .card_text {
+      text-align: center;
+      margin-top: -90px;
+      border-radius: 0px 0px 20px 20px;
+      font-family: 'FuturaDemic';
+      font-size: 20px;
+      color: white;
+
+      background-color: rgba(36, 36, 36, 0.692);
+      width: 300px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+}
+//...Конец...//
+
+.players {
+   margin-left: 80px;
+   font-size: 60px;
+   font-family: 'FuturaDemic';
+   margin-top:30px;
+   color: #0054a5;
+
+   p {
+      font-size: 40px;
+      color: #292929;
+      margin: 50px 0px -8px 0px;
+      line-height: 0px;
+   }
+   .underline {
+      display: inline-block;
+      width: 700px;
+      border-bottom: solid 3px #1678d4
+   }
+}
