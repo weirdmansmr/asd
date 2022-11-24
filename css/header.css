@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "FuturaDemic";
+  src: url("../fonts/futuraDemic/Futurademic.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+.header {
+  height: 200px;
+  box-shadow: 0px 0px 50px rgb(163, 163, 163);
+  position: relative;
+  z-index: 2;
+  background-image: url("/img/1644333089_17-phonoteka-org-p-poligonalnii-fon-belii-19.jpg");
+}
+.header .header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.header .header__logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header__logo img {
+  width: 120px;
+}
+.header .menu {
+  width: 1200px;
+  height: 50px;
+  background-color: #0054a5;
+  line-height: 50px;
+}
+.header .menu .menu__list {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.header .menu .menu__list .menu__link {
+  color: rgb(255, 255, 255);
+  padding: 15px 59px 16px;
+  transition: 0.2s;
+  width: 70px;
+}
+.header .menu .menu__list .menu__link:hover {
+  background-color: #1a81e2;
+  padding: 15px 59px 16px;
+  color: rgb(248, 248, 248);
+}
+
+.dropmenu__main {
+  position: absolute;
+  background-color: #1a81e2;
+  min-width: 145px;
+  z-index: 1;
+  width: 250px;
+  height: 200px;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  display: none;
+}
+
+.dropmenu__main .link {
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  padding: 0;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.dropmenu__main .link:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.dropmenu__main .link:hover {
+  background-color: #0054a5;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  border-top: 1px solid rgba(255, 255, 255, 0.568);
+}
+
+.hover__main:hover .dropmenu__main {
+  display: flex;
+}
+
+.hover__club:hover .dropmenu__main {
+  display: flex;
+}
+
+.hover__command:hover .dropmenu__main {
+  display: flex;
+}
