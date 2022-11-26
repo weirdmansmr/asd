@@ -81,7 +81,25 @@ body {
 //-----mySwiper-----//
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 805px;
+}
+.swiper-pagination {
+    // background-color: #ffffff3d;
+    display: inline-block;
+    padding: 20px;
+    width: 180px !important;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    bottom: -10px !important;
+    left: 910px !important;
+    text-align: center !important;
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        background-color: #57b9fa;
+    }
 }
 .swiper-slide {
     text-align: center;
@@ -90,24 +108,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    p {
+        position: absolute;
+        top: 520px;
+        left: 675px;
 
+        font-family: 'FuturaDemic';
+        color: white;
+        font-size: 90px;
+        background-color: #0055a55b;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px 0px 50px 0px;
+    }
     img {
         width: 100%;
         object-fit: cover;
+        background-position: center;
     }
 }
 .swiper-button-next,
-swiper-rtl .swiper-button-prev {
-    @include Arrows()
+swiper-rtl .swiper-button-prev::after {
+    margin-top: 100px !important;
+    padding: 30px !important;
+    border-radius: 50%;
+    color: #e4e4e4 !important;
+    background-color: #1554dd50;
 }
 .swiper-button-prev,
-swiper-rtl .swiper-button-next {
-    left: 140px !important;
-    @include Arrows()
+swiper-rtl .swiper-button-next::after {
+    margin-top: 100px !important;
+    padding: 30px !important;
+    border-radius: 50%;
+    color: #e4e4e4 !important;
+    background-color: #1554dd50;
 }
+//-----Swiper-End-----//
  
 .gallery {
-    margin: 0 0 100px 0;
+    margin: 0 80px 100px 80px;
     h2 {
         font-size: 2rem;
         font-family: monospace;

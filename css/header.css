@@ -85,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 50px rgb(163, 163, 163);
   position: relative;
   z-index: 2;
-  background-image: url("/img/back-header.jpg");
+  background-image: url("/img/oboi-nebo-svet.jpg");
+  background-position: top;
 }
 @media (max-width: 1200px) {
   .header {
@@ -108,38 +109,43 @@ h1, h2, h3, h4, h5, h6 {
   width: 120px;
 }
 .header .menu {
-  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 50px;
-  background-color: #2e227a;
+  background-color: rgba(0, 85, 165, 0.5960784314);
   line-height: 50px;
 }
 .header .menu .menu__list {
+  width: 1200px;
   display: flex;
   justify-content: space-evenly;
   font-family: "FuturaDemic";
   text-transform: uppercase;
   font-size: 16px;
-  letter-spacing: 1.5px;
 }
 .header .menu .menu__list .menu__link {
   color: rgb(255, 255, 255);
-  padding: 15px 59px 16px;
+  padding: 15px 62px 16px;
   transition: 0.2s;
+  letter-spacing: 1px;
   width: 70px;
 }
 .header .menu .menu__list .menu__link:hover {
-  background-color: #1a81e2;
-  padding: 15px 59px 16px;
+  letter-spacing: 1px;
+  background-color: rgba(26, 129, 226, 0.5960784314);
+  padding: 15px 62px 16px;
   color: rgb(248, 248, 248);
 }
 
 .dropmenu__main {
   position: absolute;
-  background-color: #1a81e2;
+  background-color: rgba(26, 129, 226, 0.5960784314);
   min-width: 145px;
   z-index: 1;
-  width: 250px;
-  height: 200px;
+  width: 280px;
+  height: 210px;
   justify-content: flex-start;
   flex-direction: column;
   text-align: left;
@@ -154,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   padding: 0;
   padding-left: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
   border-top: 1px solid rgba(255, 255, 255, 0);
   transition: 0.2s;
 }

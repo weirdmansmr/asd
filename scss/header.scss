@@ -13,7 +13,8 @@ $colorHead: #2e227a;
    box-shadow: 0px 0px 50px rgb(163, 163, 163);
    position: relative;
    z-index: 2;
-   background-image: url('/img/back-header.jpg');
+   background-image: url('/img/oboi-nebo-svet.jpg');
+   background-position: top;
    @media (max-width: 1200px) {
       display: none;
    }
@@ -34,25 +35,30 @@ $colorHead: #2e227a;
       }
    }
    .menu {
-      width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
       height: 50px;
-      background-color: #2e227a;
+      background-color: #0055a598;
       line-height: 50px;
       .menu__list {
+         width: 1200px;
          display: flex;
          justify-content: space-evenly;
          font-family: 'FuturaDemic';
          text-transform: uppercase;
          font-size: 16px;
-         letter-spacing: 1.5px;
          .menu__link {
             color: rgb(255, 255, 255);
-            padding: 15px 59px 16px;
+            padding: 15px 62px 16px;
             transition: .2s;
+            letter-spacing: 1px;
             width: 70px;
             &:hover {
-               background-color: #1a81e2;
-               padding: 15px 59px 16px;
+               letter-spacing: 1px;
+               background-color: #1a81e298;
+               padding: 15px 62px 16px;
                color: rgb(248, 248, 248);
             }
          }
@@ -62,12 +68,12 @@ $colorHead: #2e227a;
 //выпадающее меню//
 .dropmenu__main {
    position: absolute;
-   background-color: #1a81e2;
+   background-color: #1a81e298;
    min-width: 145px;
    z-index: 1;
 
-   width: 250px;
-   height: 200px;
+   width: 280px;
+   height: 210px;
    justify-content: flex-start;
    flex-direction: column;
    text-align: left;
@@ -82,7 +88,7 @@ $colorHead: #2e227a;
    font-size: 15px;
    padding: 0;
    padding-left: 10px;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+   border-bottom: 1px solid rgba(255, 255, 255, 0);
    border-top: 1px solid rgba(255, 255, 255, 0);
    transition: .2s;
    &:last-child{

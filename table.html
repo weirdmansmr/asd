@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,34 +14,34 @@
         <div class="header">
             <div class="header__container">
                <a href="./index.html" class="header__logo">
-                  <img src="./img/logo.png" width="150px" alt="">
+                  <img src="./img/logo.png" width="150px">
                </a>
                <nav class="menu">
-                  <ul class="menu__list">
-                     <li class="hover__main">
-                        <a class="menu__link" href="./index.html">Главная</a>
-                        <div class="dropmenu__main">
-                           <a class="link" href="#">Link 1</a>
-                           <a class="link" href="#">Link 2</a>
-                           <a class="link" href="#">Link 3</a>
-                         </div>
-                     </li>
-                     <li class="hover__club">
-                        <a class="menu__link" href="#">Клуб</a>
-                     </li>
-                     <li class="hover__command">
-                        <a class="menu__link" href="#">Команда</a>
-                        <div class="dropmenu__main">
-                           <a class="link" href="./players.html">Игроки</a>
-                           <a class="link" href="./coaching staff.html">Тренерский штаб</a>
-                           <a class="link" href="#">Медицинский персонал</a>
-                         </div>
-                     </li>
-                     <li><a class="menu__link" href="/table.html">Игры</a></li>
-                     <li><a class="menu__link" href="#">Мультимедиа</a></li>
-                     <li><a class="menu__link" href="./contacts.html">Контакты</a></li>
-                  </ul>
-               </nav>
+                <ul class="menu__list">
+                   <li class="hover__main">
+                      <a class="menu__link" href="./index.html">Главная</a>
+                      <div class="dropmenu__main">
+                         <a class="link" href="#">Link 1</a>
+                         <a class="link" href="#">Link 2</a>
+                         <a class="link" href="#">Link 3</a>
+                       </div>
+                   </li>
+                   <li class="hover__club">
+                      <a class="menu__link" href="#">Клуб</a>
+                   </li>
+                   <li class="hover__command">
+                      <a class="menu__link" href="./players.html">Команда</a>
+                      <div class="dropmenu__main">
+                         <a class="link" href="./players.html">Игроки</a>
+                         <a class="link" href="./coaching staff.html">Тренерский штаб</a>
+                         <a class="link" href="#">Медицинский персонал</a>
+                       </div>
+                   </li>
+                   <li><a class="menu__link" href="/table.html">Игры</a></li>
+                   <li><a class="menu__link" href="#">Мультимедиа</a></li>
+                   <li><a class="menu__link" href="./contacts.html">Контакты</a></li>
+                </ul>
+             </nav>
             </div>
         </div>
         <div class="header__mobile">
@@ -67,21 +68,66 @@
                         </div>
                     </li>
                     <li><a class="mobile__menu_link" href="/table.html">Игры</a></li>
-                    <li><a class="mobile__menu_link" href="#">Мультимедиа</a></li>
+                    <li><a class="mobile__menu_link" href="/multimedia.html">Мультимедиа</a></li>
                     <li><a class="mobile__menu_link" href="./contacts.html">Контакты</a></li>
                  </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="content">
+        <div class="players">
+            <h2>Игры</h2>
+            <p>Результаты и предстоящие матчи</p>
+            <span class="underline"></span>
+         </div>
         <div class="table visitor">
-            <div class="table_date">
-                <p class="date">29.11 <span>/ ВТ</span></p>
+            <div class="table__date">
+                <p class="date">29.11 <span>/ ПН</span></p>
                 <p class="time">20:00 <span>МСК</span></p>
             </div>
             <div class="table_score">
                 <p class="table_team">Dinamo Msk</p>
                 <img class="table_img" src="./img/ОХК_Динамо_Москва.png" alt="">
+                <div class="tablo">
+                    <p class="win">90:50</p>
+                </div>
+                <img class="table_img" src="./img/logo.png" alt="">
+                <p class="table_team">Dinamo Chr</p>
+            </div>
+            <div class="table__champ">
+                <p>Чемпионат СКФО</p>
+                <p>Грозный</p>
+                <p> <a href="https://yandex.ru/maps/-/CCUfZRGJDA">Стадион "Ахмат-арена"</a> </p>
+            </div>
+        </div>
+        <div class="table home">
+            <div class="table__date">
+                <p class="date">29.11 <span>/ СР</span></p>
+                <p class="time">20:00 <span>МСК</span></p>
+            </div>
+            <div class="table_score">
+                <p class="table_team">Dinamo Chr</p>
+                <img class="table_img" src="./img/logo.png" alt="">
+                <div class="tablo">
+                    <p class="lose">70:95</p>
+                </div>
+                <img class="table_img" src="./img/Логотип_баскетбольного_клуба_Спартак_Санкт-Петербург.png" alt="">
+                <p class="table_team">Spartak S-P</p>
+            </div>
+            <div class="table__champ">
+                <p>Чемпионат СКФО</p>
+                <p>Грозный</p>
+                <p> <a href="https://yandex.ru/maps/-/CCUfZRGJDA">Стадион "Ахмат-арена"</a> </p>
+            </div>
+        </div>
+        <div class="table home">
+            <div class="table__date">
+                <p class="date">29.11 <span>/ ПТ</span></p>
+                <p class="time">20:00 <span>МСК</span></p>
+            </div>
+            <div class="table_score">
+                <p class="table_team">CSKA Msk</p>
+                <img class="table_img" src="./img/cska.png" alt="">
                 <div class="tablo">
                     <p class="win">100:50</p>
                 </div>
@@ -91,19 +137,39 @@
             <div class="table__champ">
                 <p>Чемпионат СКФО</p>
                 <p>Грозный</p>
-                <p>Стадион "Ахмат-арена"</p>
+                <p> <a href="https://yandex.ru/maps/-/CCUfZRGJDA">Стадион "Ахмат-арена"</a> </p>
+            </div>
+        </div>
+        <div class="table visitor">
+            <div class="table__date">
+                <p class="date">29.11 <span>/ ПН</span></p>
+                <p class="time">20:00 <span>МСК</span></p>
+            </div>
+            <div class="table_score">
+                <p class="table_team">Dinamo Msk</p>
+                <img class="table_img" src="./img/ОХК_Динамо_Москва.png" alt="">
+                <div class="tablo">
+                    <p class="win">90:50</p>
+                </div>
+                <img class="table_img" src="./img/logo.png" alt="">
+                <p class="table_team">Dinamo Chr</p>
+            </div>
+            <div class="table__champ">
+                <p>Чемпионат СКФО</p>
+                <p>Грозный</p>
+                <p> <a href="https://yandex.ru/maps/-/CCUfZRGJDA">Стадион "Ахмат-арена"</a> </p>
             </div>
         </div>
         <div class="table home">
-            <div class="table_date">
-                <p class="date">29.11 <span>/ ВТ</span></p>
+            <div class="table__date">
+                <p class="date">29.11 <span>/ ВС</span></p>
                 <p class="time">20:00 <span>МСК</span></p>
             </div>
             <div class="table_score">
                 <p class="table_team">Dinamo Chr</p>
                 <img class="table_img" src="./img/logo.png" alt="">
                 <div class="tablo">
-                    <p class="lose">50:100</p>
+                    <p>-:-</p>
                 </div>
                 <img class="table_img" src="./img/ОХК_Динамо_Москва.png" alt="">
                 <p class="table_team">Dinamo Msk</p>
@@ -111,47 +177,27 @@
             <div class="table__champ">
                 <p>Чемпионат СКФО</p>
                 <p>Грозный</p>
-                <p>Стадион "Ахмат-арена"</p>
+                <p> <a href="https://yandex.ru/maps/-/CCUfZRGJDA">Стадион "Ахмат-арена"</a> </p>
             </div>
         </div>
-        <div class="table home">
-            <div class="table_date">
-                <p class="date">29.11 <span>/ ВТ</span></p>
+        <div class="table visitor">
+            <div class="table__date">
+                <p class="date">29.11 <span>/ ПН</span></p>
                 <p class="time">20:00 <span>МСК</span></p>
             </div>
             <div class="table_score">
-                <p class="table_team">Dinamo Chr</p>
-                <img class="table_img" src="./img/logo.png" alt="">
-                <div class="tablo">
-                    <p class="win">100:50</p>
-                </div>
-                <img class="table_img" src="./img/ОХК_Динамо_Москва.png" alt="">
                 <p class="table_team">Dinamo Msk</p>
+                <img class="table_img" src="./img/ОХК_Динамо_Москва.png" alt="">
+                <div class="tablo">
+                    <p class="win">90:50</p>
+                </div>
+                <img class="table_img" src="./img/logo.png" alt="">
+                <p class="table_team">Dinamo Chr</p>
             </div>
             <div class="table__champ">
                 <p>Чемпионат СКФО</p>
                 <p>Грозный</p>
-                <p>Стадион "Ахмат-арена"</p>
-            </div>
-        </div>
-        <div class="table home">
-            <div class="table_date">
-                <p class="date">29.11 <span>/ ВТ</span></p>
-                <p class="time">20:00 <span>МСК</span></p>
-            </div>
-            <div class="table_score">
-                <p class="table_team">Dinamo Chr</p>
-                <img class="table_img" src="./img/logo.png" alt="">
-                <div class="tablo">
-                    <p>--:--</p>
-                </div>
-                <img class="table_img" src="./img/ОХК_Динамо_Москва.png" alt="">
-                <p class="table_team">Dinamo Msk</p>
-            </div>
-            <div class="table__champ">
-                <p>Чемпионат СКФО</p>
-                <p>Грозный</p>
-                <p>Стадион "Ахмат-арена"</p>
+                <p> <a href="https://yandex.ru/maps/-/CCUfZRGJDA">Стадион "Ахмат-арена"</a> </p>
             </div>
         </div>
     </main>

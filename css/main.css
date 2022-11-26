@@ -93,7 +93,24 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 805px;
+}
+
+.swiper-pagination {
+  display: inline-block;
+  padding: 20px;
+  width: 180px !important;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  bottom: -10px !important;
+  left: 910px !important;
+  text-align: center !important;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #57b9fa;
 }
 
 .swiper-slide {
@@ -104,56 +121,43 @@ body {
   justify-content: center;
   align-items: center;
 }
+.swiper-slide p {
+  position: absolute;
+  top: 520px;
+  left: 675px;
+  font-family: "FuturaDemic";
+  color: white;
+  font-size: 90px;
+  background-color: rgba(0, 85, 165, 0.3568627451);
+  padding: 15px 30px 15px 30px;
+  border-radius: 50px 0px 50px 0px;
+}
 .swiper-slide img {
   width: 100%;
   object-fit: cover;
+  background-position: center;
 }
 
 .swiper-button-next,
-swiper-rtl .swiper-button-prev {
-  width: 50px;
-  line-height: 50px;
+swiper-rtl .swiper-button-prev::after {
+  margin-top: 100px !important;
+  padding: 30px !important;
   border-radius: 50%;
-  font-size: 2rem;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 150ms ease;
-}
-.swiper-button-next:hover,
-swiper-rtl .swiper-button-prev:hover {
-  background-color: rgba(9, 90, 161, 0.6039215686);
-  text-shadow: 0;
+  color: #e4e4e4 !important;
+  background-color: rgba(21, 84, 221, 0.3137254902);
 }
 
 .swiper-button-prev,
-swiper-rtl .swiper-button-next {
-  left: 140px !important;
-  width: 50px;
-  line-height: 50px;
+swiper-rtl .swiper-button-next::after {
+  margin-top: 100px !important;
+  padding: 30px !important;
   border-radius: 50%;
-  font-size: 2rem;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 150ms ease;
-}
-.swiper-button-prev:hover,
-swiper-rtl .swiper-button-next:hover {
-  background-color: rgba(9, 90, 161, 0.6039215686);
-  text-shadow: 0;
+  color: #e4e4e4 !important;
+  background-color: rgba(21, 84, 221, 0.3137254902);
 }
 
 .gallery {
-  margin: 0 0 100px 0;
+  margin: 0 80px 100px 80px;
 }
 .gallery h2 {
   font-size: 2rem;
