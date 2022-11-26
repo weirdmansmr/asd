@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "FuturaDemic";
+  src: url("../fonts/futuraDemic/Futurademic.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+.header {
+  height: 200px;
+  box-shadow: 0px 0px 50px rgb(163, 163, 163);
+  position: relative;
+  z-index: 2;
+  background-image: url("/img/oboi-nebo-svet.jpg");
+  background-position: top;
+}
+@media (max-width: 1200px) {
+  .header {
+    display: none;
+  }
+}
+.header .header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.header .header__logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header__logo img {
+  width: 120px;
+}
+.header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 85, 165, 0.5960784314);
+  line-height: 50px;
+}
+.header .menu .menu__list {
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.header .menu .menu__list .menu__link {
+  color: rgb(255, 255, 255);
+  padding: 15px 62px 16px;
+  transition: 0.2s;
+  letter-spacing: 1px;
+  width: 70px;
+}
+.header .menu .menu__list .menu__link:hover {
+  letter-spacing: 1px;
+  background-color: rgba(26, 129, 226, 0.5960784314);
+  padding: 15px 62px 16px;
+  color: rgb(248, 248, 248);
+}
+
+.dropmenu__main {
+  position: absolute;
+  background-color: rgba(26, 129, 226, 0.5960784314);
+  min-width: 145px;
+  z-index: 1;
+  width: 280px;
+  height: 210px;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  display: none;
+}
+
+.dropmenu__main .link {
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  padding: 0;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.dropmenu__main .link:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.dropmenu__main .link:hover {
+  background-color: #0054a5;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  border-top: 1px solid rgba(255, 255, 255, 0.568);
+}
+
+.hover__main:hover .dropmenu__main {
+  display: flex;
+}
+
+.hover__club:hover .dropmenu__main {
+  display: flex;
+}
+
+.hover__command:hover .dropmenu__main {
+  display: flex;
+}
+
+.header__mobile {
+  height: 50px;
+  box-shadow: 0px 0px 50px rgb(163, 163, 163);
+  position: relative;
+  z-index: 2;
+  background-image: url("/img/back-header.jpg");
+  font-family: "FuturaDemic";
+  text-transform: uppercase;
+}
+.header__mobile img {
+  width: 40px;
+  margin: 0 20px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  transition: 0.4s;
+}
+.header__mobile img:active {
+  transform: rotateZ(180deg);
+}
+.header__mobile a {
+  color: #ffffff;
+}
+@media (min-width: 1201px) {
+  .header__mobile {
+    display: none;
+  }
+}
+
+.menu__mobile {
+  height: calc(100% - 50px);
+  width: 100%;
+  background-color: #0054a5;
+  position: fixed;
+  bottom: 0;
+}
+.menu__mobile .mobile__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}

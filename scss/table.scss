@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'DS-Crystal';
+    src: url(../fonts/DS-Crystal/ds-crystal_[allfont.ru].ttf);
+}
+@font-face {
+    font-family: Timer;
+    src: url(../fonts/CursedTimer/CursedTimerUlil-Aznm.ttf);
+}
+.table {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: 20px 80px 20px 80px;
+    padding: 0px 50px 0px 50px;
+    align-items: center;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+  
+.home {
+    background-color: #eefdeb;
+}
+.visitor {
+    background-color: #fcefef;
+}
+.table__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'FuturaDemic';
+    .date {
+        margin: 5px 0;
+        font-weight: 700;
+    }
+    .time {
+        margin: 0;
+        font-weight: 700;
+    }
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.table_score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .table_img {
+        width: 80px;
+        margin: 0 10px;
+    }
+    .tablo {
+        font-family: 'Timer';
+        font-size: 20px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+
+        .win {
+            margin-top: 5px;
+            color: #000000;
+        }
+        .lose {
+            margin-top: 5px;
+            color: #000000;
+        }
+    }
+    .table_team {
+        font-family: 'FuturaDemic';
+        font-weight: 700;
+        color: #2c2c2c;
+    }
+}
+
+.table__champ {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 18px;
+    p {
+        margin: 3px;
+        a {
+            color: #555555;
+            text-decoration: underline;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.players {
+    margin-left: 80px;
+    font-size: 60px;
+    font-family: 'FuturaDemic';
+    margin-top:30px;
+    color: #0054a5;
+ 
+    p {
+        font-size: 40px;
+        color: #292929;
+        margin: 50px 0px -8px 0px;
+        line-height: 0px;
+    }
+    .underline {
+        border-radius: 50px;
+        display: inline-block;
+        width: 700px;
+        border-bottom: solid 3px #1678d4
+    }
+ }
+ 
