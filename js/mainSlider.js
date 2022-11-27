@@ -11,4 +11,5 @@ let swiper = new Swiper(".mySwiper", {
 	},
 	mousewhell: true,
 	keyboard: true,
+	loop: true,
 });
