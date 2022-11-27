@@ -1,8 +1,7 @@
 @import 'null-style.scss';
 
-
 .players {
-   margin-left: 80px;
+   margin-left: 55px;
    font-size: 60px;
    font-family: 'FuturaDemic';
    margin-top:30px;
@@ -27,13 +26,10 @@
    flex-direction: column;
 }
 .content__container {
-
-
-   width: 1160px;
+   width: calc(100% - 50px);
 }
 
 .multimedia {
-   margin: 0 0 100px 0;
    h2 {
        font-size: 2rem;
        font-family: monospace;
@@ -42,45 +38,45 @@
        margin: 40px 0;
    }
    .photos {
-       display: grid;
-       justify-items: center;
-       gap: 20px;
-       position: relative;
-       grid-template-rows: 1fr 1fr;
-       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-       .gall_img {
-           border-radius: 10px;
-           width: 500px;
-           height: 300px;
-           transition: .2s;
-           position: relative;
-       }
-       .img_text {
-           margin: 0;
-           height: 300px;
-           width: 500px;
-           background-color: #095aa152;
-           border-radius: 10px;
-           position: absolute;
-           transition: .2s;
-           opacity: 0;
-           z-index: 2;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           &:hover {
-               opacity: 1;
-               transform: scale(1.05, 1.05);
-           }
-           &:hover + .gall_img {
-               transform: scale(1.05, 1.05);
-           }
-           p {
-               color: #ffffff;
-               font-family: monospace;
-               font-weight: 600;
-               font-size: 1.5rem;
-           }
-       }
-   }
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    position: relative;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    .gall_img {
+        border-radius: 10px;
+        width: 500px;
+        height: 300px;
+        transition: .2s;
+        position: relative;
+    }
+    .img_text {
+        margin: 0;
+        height: 300px;
+        width: 500px;
+        background-color: #095aa152;
+        border-radius: 10px;
+        position: absolute;
+        transition: .2s;
+        opacity: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            opacity: 1;
+            transform: scale(1.05, 1.05);
+        }
+        &:hover + .gall_img {
+            transform: scale(1.05, 1.05);
+        }
+        p {
+            color: #ffffff;
+            font-family: monospace;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}
 }

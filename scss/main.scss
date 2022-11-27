@@ -17,6 +17,15 @@
     }
 }
 
+@mixin Area_w_h ($a, $b) {
+    width: $a;
+    height: $b;
+    .gall_img, .img_text {
+        width: $a;
+        height: $b;
+    }
+}
+
 #slider {
 	position: relative;
 	width: 100%;
@@ -145,7 +154,9 @@ swiper-rtl .swiper-button-next::after {
 //-----Swiper-End-----//
  
 .gallery {
-    margin: 0 80px 100px 80px;
+    margin: 0 auto 100px;
+    width: 1400px;
+    
     h2 {
         font-size: 2rem;
         font-family: monospace;
@@ -153,24 +164,42 @@ swiper-rtl .swiper-button-next::after {
         text-align: center;
         margin: 40px 0;
     }
+
     .photos {
         display: grid;
         justify-items: center;
-        gap: 20px;
-        position: relative;
+        gap: 40px;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        'img1 img1 img1 img2 img2 img2'
+        'img3 img3 img4 img4 img5 img5';
+        .img_1 {
+            grid-area: img1; 
+            @include Area_w_h($a: 700px, $b: 390px);
+         }
+        .img_2 {
+            grid-area: img2; 
+            @include Area_w_h($a: 700px, $b: 390px);
+         }
+        .img_3 {
+            grid-area: img3; 
+            @include Area_w_h($a: 460px, $b: 261px);
+         }
+        .img_4 {
+            grid-area: img4; 
+            @include Area_w_h($a: 460px, $b: 261px);
+         }
+        .img_5 {
+            grid-area: img5; 
+            @include Area_w_h($a: 460px, $b: 261px);
+         }
         .gall_img {
             border-radius: 10px;
-            width: 500px;
-            height: 300px;
             transition: .2s;
-            position: relative;
         }
         .img_text {
             margin: 0;
-            height: 300px;
-            width: 500px;
             background-color: #095aa152;
             border-radius: 10px;
             position: absolute;

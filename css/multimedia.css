@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 .players {
-  margin-left: 80px;
+  margin-left: 55px;
   font-size: 60px;
   font-family: "FuturaDemic";
   margin-top: 30px;
@@ -101,12 +101,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content__container {
-  width: 1160px;
+  width: calc(100% - 50px);
 }
 
-.multimedia {
-  margin: 0 0 100px 0;
-}
 .multimedia h2 {
   font-size: 2rem;
   font-family: monospace;
