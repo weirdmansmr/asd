@@ -8,7 +8,7 @@ const arrNews = [
     [5, `src="./img/basketball_5.jpg"`],
 ]
 
-for (i = 0; i <= 5; i++) {
+for (i = 0; i <= 4; i++) {
     photos.insertAdjacentHTML(
         "beforeend", 
         `
@@ -21,3 +21,23 @@ for (i = 0; i <= 5; i++) {
         `
     )
 }
+
+let text = document.querySelectorAll('.img_text')
+let img = document.querySelectorAll('.gall_img')
+
+if (window.screen.width < 1201) {
+    function ChangeText() {
+        setTimeout(() => {
+            for (let i = 0; i <= 4; i++) {
+                text[i].style.width = img[i].offsetWidth + 'px'
+                text[i].style.height = img[i].offsetHeight + 'px'
+                console.log(img[i].offsetWidth)
+            }
+        }, 0)
+    }
+    ChangeText()
+    
+        window.addEventListener('resize', () => {
+            ChangeText()
+        })
+    }
