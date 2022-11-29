@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DINAMO</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/header.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="container">
+         <header class="header">
+            <div class="header__container">
+
+               <a href="./index.html" class="header__logo">
+                  <img src="./img/logo.png" width="150px">
+               </a>
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li class="hover__main">
+                        <a class="menu__link" href="./index.html">Главная</a>
+                        <div class="dropmenu__main">
+                           <a class="link" href="#">Link 1</a>
+                           <a class="link" href="#">Link 2</a>
+                           <a class="link" href="#">Link 3</a>
+                         </div>
+                     </li>
+                     <li class="hover__club">
+                        <a class="menu__link" href="#">Клуб</a>
+                     </li>
+                     <li class="hover__command">
+                        <a class="menu__link" href="#">Команда</a>
+                        <div class="dropmenu__main">
+                           <a class="link" href="./players.html">Игроки</a>
+                           <a class="link" href="./coaching staff.html">Тренерский штаб</a>
+                           <a class="link" href="#">Медицинский персонал</a>
+                         </div>
+                     </li>
+                     <li><a class="menu__link" href="/table.html">Игры</a></li>
+                     <li><a class="menu__link" href="./multimedia.html">Мультимедиа</a></li>
+                     <li><a class="menu__link" href="./contacts.html">Контакты</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </header>
+         <main class="content">
+            <div class="container">
+               <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <p>Баскетбольный клуб DINAMO 1</p>
+                        <video muted="muted" id="basketVideo" width="100%" height="auto" loop="loop" autoplay="autoplay" preload="auto">
+                           <source src="./img/video_preview_h264 (3).mp4"></source>
+                       </video>
+                     </div>
+                     <div class="swiper-slide">
+                        <p>Баскетбольный клуб DINAMO 2</p>
+                        <video muted="muted" id="basketVideo" width="100%" height="auto" loop="loop" autoplay="autoplay" preload="auto">
+                           <source src="./img/KRONBARS Basketball promo.mp4"></source>
+                       </video>
+                     </div>
+                     <div class="swiper-slide">
+                        <p>Баскетбольный клуб DINAMO 3</p>
+                        <video muted="muted" id="basketVideo" width="100%" height="auto" loop="loop" autoplay="autoplay" preload="auto">
+                           <source src="./img/KRONBARS Basketball promo.mp4"></source>
+                       </video>
+                     </div>
+                     <div class="swiper-slide">
+                        <p>Баскетбольный клуб DINAMO 4</p>
+                        <video muted="muted" id="basketVideo" width="100%" height="auto" loop="loop" autoplay="autoplay" preload="auto">
+                           <source src="./img/KRONBARS Basketball promo.mp4"></source>
+                       </video>
+                     </div>
+                     <div class="swiper-slide">
+                        <p>Баскетбольный клуб DINAMO 5</p>
+                        <video muted="muted" id="basketVideo" width="100%" height="auto" loop="loop" autoplay="autoplay" preload="auto">
+                           <source src="./img/KRONBARS Basketball promo.mp4"></source>
+                       </video>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination">
+                     <div class="swiper-pagination-bullet"></div>
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="gallery">
+                  <h2>Галерея клуба</h2>
+                  <div class="photos">
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+   </div>
+   <script src="./js/news.js"></script>
+   <script src="./js/mainSlider.js"></script>
+</body>
+</html>

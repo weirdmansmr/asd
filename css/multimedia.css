@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.players {
+  margin-left: 55px;
+  font-size: 60px;
+  font-family: "FuturaDemic";
+  margin-top: 30px;
+  color: #0054a5;
+}
+.players p {
+  font-size: 40px;
+  color: #292929;
+  margin: 50px 0px -8px 0px;
+  line-height: 0px;
+}
+.players .underline {
+  display: inline-block;
+  width: 700px;
+  border-bottom: solid 3px #1678d4;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content__container {
+  width: calc(100% - 50px);
+}
+
+.multimedia h2 {
+  font-size: 2rem;
+  font-family: monospace;
+  color: #0959a1;
+  text-align: center;
+  margin: 40px 0;
+}
+.multimedia .photos {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  position: relative;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.multimedia .photos .gall_img {
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  transition: 0.2s;
+  position: relative;
+}
+.multimedia .photos .img_text {
+  margin: 0;
+  height: 300px;
+  width: 500px;
+  background-color: rgba(9, 90, 161, 0.3215686275);
+  border-radius: 10px;
+  position: absolute;
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.multimedia .photos .img_text:hover {
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+}
+.multimedia .photos .img_text:hover + .gall_img {
+  transform: scale(1.05, 1.05);
+}
+.multimedia .photos .img_text p {
+  color: #ffffff;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.5rem;
+}

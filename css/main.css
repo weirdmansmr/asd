@@ -1,0 +1,298 @@
+.slide {
+  width: 100vw;
+  height: calc(100vh - 220px);
+  background-image: url(../img/grozny-226.jpg);
+  background-size: cover;
+  background-position: 50% 20%;
+}
+.slide .slide_text {
+  background-color: rgba(9, 90, 161, 0.8);
+  height: 300px;
+  width: 1000px;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 0 0;
+  overflow: hidden;
+}
+.slide .slide_text h3 {
+  color: #ffffff;
+  margin: 0 50px;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 15px;
+}
+
+.swiper {
+  width: 100%;
+  height: 75vh;
+}
+@media (max-width: 1200px) {
+  .swiper {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+.swiper-pagination {
+  display: inline-block;
+  padding: 20px;
+  width: 180px !important;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  text-align: center !important;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #57b9fa;
+  opacity: 0.4;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swiper-slide p {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  font-family: "FuturaDemic";
+  color: white;
+  font-size: 70px;
+  background-color: rgba(0, 85, 165, 0.3568627451);
+  padding: 15px 30px 15px 30px;
+  border-radius: 50px 0px 50px 0px;
+}
+@media (max-width: 1200px) {
+  .swiper-slide p {
+    font-size: 45px;
+  }
+}
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+}
+
+.swiper-button-next,
+swiper-rtl .swiper-button-prev::after {
+  margin-top: 100px !important;
+  padding: 30px !important;
+  border-radius: 50%;
+  color: #e4e4e4 !important;
+  background-color: rgba(21, 84, 221, 0.3137254902);
+}
+@media (max-width: 1200px) {
+  .swiper-button-next,
+swiper-rtl .swiper-button-prev::after {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 640px) {
+  .swiper-button-next,
+swiper-rtl .swiper-button-prev::after {
+    display: none !important;
+  }
+}
+
+.swiper-button-prev,
+swiper-rtl .swiper-button-next::after {
+  margin-top: 100px !important;
+  padding: 30px !important;
+  border-radius: 50%;
+  color: #e4e4e4 !important;
+  background-color: rgba(21, 84, 221, 0.3137254902);
+}
+@media (max-width: 1200px) {
+  .swiper-button-prev,
+swiper-rtl .swiper-button-next::after {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 640px) {
+  .swiper-button-prev,
+swiper-rtl .swiper-button-next::after {
+    display: none !important;
+  }
+}
+
+.gallery {
+  margin: 0 auto 100px;
+  width: 1200px;
+}
+@media (max-width: 1200px) {
+  .gallery {
+    width: 80%;
+    margin: auto;
+  }
+}
+.gallery h2 {
+  font-size: 2rem;
+  font-family: monospace;
+  color: #0959a1;
+  text-align: center;
+  margin: 40px 0;
+}
+.gallery .photos {
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "img1 img1 img1 img2 img2 img2" "img3 img3 img4 img4 img5 img5";
+}
+@media (max-width: 1200px) {
+  .gallery .photos {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-areas: unset;
+    grid-template-rows: auto;
+  }
+}
+.gallery .photos .img_1 {
+  grid-area: img1;
+  width: 100%;
+  height: 360px;
+}
+.gallery .photos .img_1 .gall_img, .gallery .photos .img_1 .img_text {
+  width: 100%;
+  height: 360px;
+}
+@media (max-width: 1200px) {
+  .gallery .photos .img_1 {
+    grid-area: auto;
+    height: 100%;
+    width: 100%;
+  }
+  .gallery .photos .img_1 .gall_img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.gallery .photos .img_2 {
+  grid-area: img2;
+  width: 100%;
+  height: 360px;
+}
+.gallery .photos .img_2 .gall_img, .gallery .photos .img_2 .img_text {
+  width: 100%;
+  height: 360px;
+}
+@media (max-width: 1200px) {
+  .gallery .photos .img_2 {
+    grid-area: auto;
+    height: 100%;
+    width: 100%;
+  }
+  .gallery .photos .img_2 .gall_img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.gallery .photos .img_3 {
+  grid-area: img3;
+  width: 100%;
+  height: 240px;
+}
+.gallery .photos .img_3 .gall_img, .gallery .photos .img_3 .img_text {
+  width: 100%;
+  height: 240px;
+}
+@media (max-width: 1200px) {
+  .gallery .photos .img_3 {
+    grid-area: auto;
+    height: 100%;
+    width: 100%;
+  }
+  .gallery .photos .img_3 .gall_img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.gallery .photos .img_4 {
+  grid-area: img4;
+  width: 100%;
+  height: 240px;
+}
+.gallery .photos .img_4 .gall_img, .gallery .photos .img_4 .img_text {
+  width: 100%;
+  height: 240px;
+}
+@media (max-width: 1200px) {
+  .gallery .photos .img_4 {
+    grid-area: auto;
+    height: 100%;
+    width: 100%;
+  }
+  .gallery .photos .img_4 .gall_img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.gallery .photos .img_5 {
+  grid-area: img5;
+  width: 100%;
+  height: 240px;
+}
+.gallery .photos .img_5 .gall_img, .gallery .photos .img_5 .img_text {
+  width: 100%;
+  height: 240px;
+}
+@media (max-width: 1200px) {
+  .gallery .photos .img_5 {
+    grid-area: auto;
+    height: 100%;
+    width: 100%;
+  }
+  .gallery .photos .img_5 .gall_img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.gallery .photos .gall_img {
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.gallery .photos .img_text {
+  margin: 0;
+  background-color: rgba(9, 90, 161, 0.3215686275);
+  border-radius: 10px;
+  position: absolute;
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .photos .img_text:hover {
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+}
+.gallery .photos .img_text:hover + .gall_img {
+  transform: scale(1.05, 1.05);
+}
+.gallery .photos .img_text p {
+  color: #ffffff;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
