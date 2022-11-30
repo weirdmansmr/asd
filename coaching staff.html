@@ -11,39 +11,70 @@
 <body>
    <div class="wrapper">
       <div class="container">
-         <header class="header">
-            <div class="header__container">
-               <a href="./index.html" class="header__logo">
-                  <img src="./img/logo.png" width="150px" alt="">
-               </a>
-               <nav class="menu">
-                  <ul class="menu__list">
-                     <li class="hover__main">
-                        <a class="menu__link" href="./index.html">Главная</a>
-                        <div class="dropmenu__main">
-                           <a class="link" href="#">Link 1</a>
-                           <a class="link" href="#">Link 2</a>
-                           <a class="link" href="#">Link 3</a>
-                         </div>
-                     </li>
-                     <li class="hover__club">
-                        <a class="menu__link" href="#">Клуб</a>
-                     </li>
-                     <li class="hover__command">
-                        <a class="menu__link" href="./players.html">Команда</a>
-                        <div class="dropmenu__main">
-                           <a class="link" href="./players.html">Игроки</a>
-                           <a class="link" href="./coaching staff.html">Тренерский штаб</a>
-                           <a class="link" href="#">Медицинский персонал</a>
-                         </div>
-                     </li>
-                     <li><a class="menu__link" href="/table.html">Игры</a></li>
-                     <li><a class="menu__link" href="./multimedia.html">Мультимедиа</a></li>
-                     <li><a class="menu__link" href="./contacts.html">Контакты</a></li>
-                  </ul>
-               </nav>
+         <header>
+            <div class="header">
+                <div class="header__container">
+                   <a href="./index.html" class="header__logo">
+                      <img src="./img/logo.png" width="150px">
+                   </a>
+                   <nav class="menu">
+                    <ul class="menu__list">
+                       <li class="hover__main">
+                          <a class="menu__link" href="./index.html">Главная</a>
+                          <div class="dropmenu__main">
+                             <a class="link" href="#">Link 1</a>
+                             <a class="link" href="#">Link 2</a>
+                             <a class="link" href="#">Link 3</a>
+                           </div>
+                       </li>
+                       <li class="hover__club">
+                          <a class="menu__link" href="#">Клуб</a>
+                       </li>
+                       <li class="hover__command">
+                          <a class="menu__link" href="./players.html">Команда</a>
+                          <div class="dropmenu__main">
+                             <a class="link" href="./players.html">Игроки</a>
+                             <a class="link" href="./coaching staff.html">Тренерский штаб</a>
+                             <a class="link" href="#">Медицинский персонал</a>
+                           </div>
+                       </li>
+                       <li><a class="menu__link" href="./table.html">Игры</a></li>
+                       <li><a class="menu__link" href="./multimedia.html">Мультимедиа</a></li>
+                       <li><a class="menu__link" href="./contacts.html">Контакты</a></li>
+                    </ul>
+                 </nav>
+                </div>
             </div>
-         </header>
+            <div class="header__mobile">
+                <img  style="transform: rotateZ(0);" class="mobile_btn" src="./img/next.png" alt="">
+                <nav class="menu__mobile" style="width: 0px;" >
+                    <ul class="mobile__list">
+                        <li class="mobile__main">
+                           <a class="mobile__menu_link" href="./index.html">Главная</a>
+                           <div class="mobile__drop_main" style="display: none;">
+                              <a class="mobile__link" href="#">Link 1</a>
+                              <a class="mobile__link" href="#">Link 2</a>
+                              <a class="mobile__link" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="mobile__club">
+                           <a class="mobile__menu_link" href="#">Клуб</a>
+                        </li>
+                        <li class="mobile__command">
+                           <a class="mobile__menu_link" href="#">Команда</a>
+                           <div class="mobile__drop_command" style="display: none;">
+                              <a class="mobile__link" href="./players.html">Игроки</a>
+                              <a class="mobile__link" href="./coaching staff.html">Тренерский штаб</a>
+                              <a class="mobile__link" href="#">Медицинский персонал</a>
+                            </div>
+                        </li>
+                        <li><a class="mobile__menu_link" href="/table.html">Игры</a></li>
+                        <li><a class="mobile__menu_link" href="/multimedia.html">Мультимедиа</a></li>
+                        <li><a class="mobile__menu_link" href="./contacts.html">Контакты</a></li>
+                     </ul>
+                </nav>
+            </div>
+        </header>
          <main class="content">
             <div class="userCard__background">
                <div class="close__cross">
@@ -83,5 +114,6 @@
       </div>
    </div>
    <script src="./js/cards coach.js"></script>
+   <script src="./js/mob_menu.js"></script>
 </body>
 </html>

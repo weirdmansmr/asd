@@ -183,21 +183,21 @@ swiper-rtl .swiper-button-next::after {
         }
         .img_1 {
             grid-area: img1; 
-            @include Area_w_h($a: 700px, $b: 390px);
+            @include Area_w_h($a: 100%, $b: 360px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
             }
          }
         .img_2 {
             grid-area: img2; 
-            @include Area_w_h($a: 700px, $b: 390px);
+            @include Area_w_h($a: 100%, $b: 360px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
             }
          }
         .img_3 {
             grid-area: img3; 
-            @include Area_w_h($a: 460px, $b: 261px);
+            @include Area_w_h($a: 100%, $b: 240px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
                 
@@ -205,14 +205,14 @@ swiper-rtl .swiper-button-next::after {
          }
         .img_4 {
             grid-area: img4; 
-            @include Area_w_h($a: 460px, $b: 261px);
+            @include Area_w_h($a: 100%, $b: 240px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
             }
          }
         .img_5 {
             grid-area: img5; 
-            @include Area_w_h($a: 460px, $b: 261px);
+            @include Area_w_h($a: 100%, $b: 240px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
             }

@@ -8,13 +8,20 @@
 }
 $colorHead: #2e227a;
 
+main {
+   position: relative;
+   transition: .3s;
+}
+
 .header {
    height: 200px;
    box-shadow: 0px 0px 50px rgb(163, 163, 163);
    position: relative;
    z-index: 2;
-   background-image: url('/img/oboi-nebo-svet.jpg');
+   background-image: url('/img/oboi-nebo.jpg');
    background-position: top;
+   background-repeat: no-repeat;
+   object-fit: cover;
    @media (max-width: 1200px) {
       display: none;
    }
@@ -114,9 +121,9 @@ $colorHead: #2e227a;
 
 //мобильная версия
 .header__mobile {
-   height: 50px;
+   width: 100%;
    box-shadow: 0px 0px 50px rgb(163, 163, 163);
-   position: relative;
+   position: fixed;
    z-index: 2;
    background-image: url('/img/back-header.jpg');
    font-family: 'FuturaDemic';
@@ -124,13 +131,11 @@ $colorHead: #2e227a;
    img {
       width: 40px;
       margin: 0 20px;
+      border: 1px solid #0054a5;
       position: absolute;
       right: 0;
       top: 5px;
-      transition: .4s;
-      &:active {
-         transform: rotateZ(180deg);
-      }
+      transition: .3s;
    }
    a {
       color: #ffffff;
@@ -142,15 +147,63 @@ $colorHead: #2e227a;
 
 .menu__mobile {
    height: calc(100% - 50px);
-   width: 100%;
-   background-color: #0054a5;
+   width: 0;
+   transition: .3s;
+   background-color: #0055a5;
    position: fixed;
+   right: 0;
    bottom: 0;
+
    .mobile__list {
+      
+      margin: 50px 0px 0px 0px;
+      height: 100%;
+      
+      opacity: 0;
+
+      li {
+         // &:hover {
+         //    background-color: #0055a5e0;
+         // }
+         font-size: 40px;
+         font-family: monospace;
+         border-bottom: 1px dotted rgb(255, 255, 255);
+         padding: 20px 0px 20px 0px;
+         a {
+            padding: 0px 0px 0px 15px;
+         }
+
+         &:nth-child(3) {
+            .mobile__menu_link::after {
+               content: '▾';
+               position: absolute;
+               right: 20px;
+            }
+         }
+      }
+   }
+
+   .mobile__command{
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-direction: column;
-      height: 100%;
+      .mobile__drop_command {
+         background-color: #0c4e8be0;
+         margin: 0;
+         a{
+            font-weight: 700;
+            padding: 21px 0px 20px 25px;
+            color: rgb(255, 255, 255);
+            display: block;
+
+            &:hover {
+               background-color: #1361aae0;
+            }
+            &::before {
+               content: '◦';
+               padding-right: 5px;
+            }
+         }
+      }
    }
 }
