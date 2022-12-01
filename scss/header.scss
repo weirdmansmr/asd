@@ -8,9 +8,11 @@
 }
 $colorHead: #2e227a;
 
-main {
-   position: relative;
-   transition: .3s;
+@media (max-width: 1201px) {
+   main {
+      position: relative;
+      transition: .3s;
+   }
 }
 
 .header {

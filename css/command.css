@@ -101,12 +101,12 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1000;
+  z-index: 10;
 }
 .userCard__background .player {
   background-color: rgba(0, 85, 165, 0.9607843137);
-  width: 1200px;
-  height: 900px;
+  width: 80%;
+  height: 80%;
   border-radius: 20px;
   margin: auto;
   color: white;
@@ -116,6 +116,12 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   padding: 20px 30px;
+}
+@media (max-width: 1201px) {
+  .userCard__background .player {
+    width: 100%;
+    height: 100%;
+  }
 }
 .userCard__background .player h2 {
   margin-top: 20px;
@@ -139,6 +145,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 400px;
   margin-left: 50px;
   background-color: white;
+}
+@media (max-width: 1201px) {
+  .userCard__background .player .player__content img {
+    width: 320px;
+    height: 380px;
+    margin: 0;
+  }
 }
 .userCard__background .player .player__content .player__text {
   margin: 20px 0px 0px 15px;
@@ -180,14 +193,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 50px;
   height: 50px;
   background-color: rgba(0, 85, 165, 0.4196078431);
-  border-radius: 50px;
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 11;
   position: absolute;
-  top: 70px;
-  left: 1700px;
+  top: 5%;
+  right: 5%;
 }
 .userCard__background .close__cross:hover {
   font-size: 60px;
