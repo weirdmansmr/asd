@@ -14,6 +14,9 @@
    justify-items: center;
    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
    padding-top: 30px;
+   @media (max-width: 1201px) {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   }
 }
 
 .userCard__background {
@@ -180,12 +183,10 @@
 //...Конец...//
 
 .players {
-   margin-left: 80px;
    font-size: 60px;
    font-family: 'FuturaDemic';
-   margin-top:30px;
    color: #0054a5;
-
+   padding: 80px 0 0 30px;
    p {
       font-size: 40px;
       color: #292929;
@@ -196,5 +197,14 @@
       display: inline-block;
       width: 700px;
       border-bottom: solid 3px #1678d4
+   }
+   @media (max-width: 1201px) {
+      font-size: 36px;
+      p {
+         font-size: 26px;
+      }
+      .underline {
+         width: 70%;
+      }
    }
 }
