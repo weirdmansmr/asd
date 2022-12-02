@@ -54,8 +54,12 @@
          font-size: 45px;
          font-family: 'Futurademic';
          text-transform: uppercase;
+         text-align: center;
          img {
             border: 2px solid rgb(255, 255, 255);
+         }
+         @media (max-width: 648px) {
+            font-size: 36px;
          }
       }
       p {
@@ -67,27 +71,48 @@
          display: grid;
          grid-template-columns: 1fr 1fr;
          grid-template-rows: 1fr 1fr;
-
+         grid-template-areas:
+            "img info"
+            "bio bio";
+         @media (max-width: 648px) {
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'img'
+            'info'
+            'bio';
+         }
          img{
             border: 3px solid rgb(0, 0, 0);
             width: 320px;
             height: 400px;
             margin-left: 50px;
             background-color: white;
+            grid-area: img;
+            justify-self: end;
             @media (max-width: 1201px) {
                width: 320px;
                height: 380px;
                margin: 0;
             }
+            @media (max-width: 400px) {
+               width: 260px;
+               height: 320px;
+            }
+            @media (max-width: 648px) {
+               justify-self: center;
+            }
          }
 
          .player__text {
             margin: 20px 0px 0px 15px;
+            grid-area: info;
             h2 {
                font-family: 'College';
                font-size: 100px;
                letter-spacing: -6px;
                font-weight: 700;
+               text-align: left;
             }
             p:nth-child(2) {
                font-family: monospace;
@@ -120,6 +145,7 @@
             }
          }
          .player__biography {
+            grid-area: bio;
             p {
                font-family: monospace;
                font-weight: 400;
@@ -148,7 +174,11 @@
       position: absolute;
       top: 5%;
       right: 5%;
-
+      @media (max-width: 1201px) {
+         right: 0;
+         top: 0;
+         background-color: rgba($color: #000000, $alpha: 0);
+      }
       &:hover {
          font-size: 60px;
          background-color: #0055a593;

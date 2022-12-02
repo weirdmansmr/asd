@@ -130,9 +130,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 45px;
   font-family: "Futurademic";
   text-transform: uppercase;
+  text-align: center;
 }
 .userCard__background .player h2 img {
   border: 2px solid rgb(255, 255, 255);
+}
+@media (max-width: 648px) {
+  .userCard__background .player h2 {
+    font-size: 36px;
+  }
 }
 .userCard__background .player p {
   font-size: 35px;
@@ -143,6 +149,14 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img info" "bio bio";
+}
+@media (max-width: 648px) {
+  .userCard__background .player .player__content {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "info" "bio";
+  }
 }
 .userCard__background .player .player__content img {
   border: 3px solid rgb(0, 0, 0);
@@ -150,6 +164,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 400px;
   margin-left: 50px;
   background-color: white;
+  grid-area: img;
+  justify-self: end;
 }
 @media (max-width: 1201px) {
   .userCard__background .player .player__content img {
@@ -158,14 +174,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
 }
+@media (max-width: 400px) {
+  .userCard__background .player .player__content img {
+    width: 260px;
+    height: 320px;
+  }
+}
+@media (max-width: 648px) {
+  .userCard__background .player .player__content img {
+    justify-self: center;
+  }
+}
 .userCard__background .player .player__content .player__text {
   margin: 20px 0px 0px 15px;
+  grid-area: info;
 }
 .userCard__background .player .player__content .player__text h2 {
   font-family: "College";
   font-size: 100px;
   letter-spacing: -6px;
   font-weight: 700;
+  text-align: left;
 }
 .userCard__background .player .player__content .player__text p:nth-child(2) {
   font-family: monospace;
@@ -194,6 +223,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   text-transform: uppercase;
 }
+.userCard__background .player .player__content .player__biography {
+  grid-area: bio;
+}
 .userCard__background .player .player__content .player__biography p {
   font-family: monospace;
   font-weight: 400;
@@ -219,6 +251,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 5%;
   right: 5%;
+}
+@media (max-width: 1201px) {
+  .userCard__background .close__cross {
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 .userCard__background .close__cross:hover {
   font-size: 60px;
