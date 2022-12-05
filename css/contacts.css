@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1203px) {
   .contacts__container .map .volleyball__map {
     width: 90%;
-    height: 70vh;
+    height: 60vh;
   }
 }
 .contacts__container .map h2 {
