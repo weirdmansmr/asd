@@ -16,6 +16,13 @@
   font-size: 1.3rem;
   border-radius: 5px;
 }
+@media (max-width: 1200px) {
+  .table {
+    height: auto;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+}
 
 .home {
   background-color: #eefdeb;
@@ -32,6 +39,11 @@
   flex-direction: column;
   font-size: 18px;
   font-family: "FuturaDemic";
+}
+@media (max-width: 1200px) {
+  .table__date {
+    font-size: 16px;
+  }
 }
 .table__date .date {
   margin: 5px 0;
@@ -56,6 +68,11 @@
   width: 80px;
   margin: 0 10px;
 }
+@media (max-width: 1200px) {
+  .table_score .table_img {
+    width: 60px;
+  }
+}
 .table_score .tablo {
   font-family: "Timer";
   font-size: 20px;
@@ -76,6 +93,11 @@
   font-weight: 700;
   color: #2c2c2c;
 }
+@media (max-width: 600px) {
+  .table_score .table_team {
+    display: none;
+  }
+}
 
 .table__champ {
   display: flex;
@@ -85,6 +107,12 @@
   font-family: monospace;
   font-weight: 500;
   font-size: 18px;
+}
+@media (max-width: 1200px) {
+  .table__champ {
+    align-items: center;
+    font-size: 14px;
+  }
 }
 .table__champ p {
   margin: 3px;
@@ -103,15 +131,33 @@
   color: #0054a5;
   padding: 30px 0 0 80px;
 }
+@media (max-width: 1200px) {
+  .players {
+    font-size: 36px;
+    padding: 80px 0 0 30px;
+  }
+}
 .players p {
   font-size: 40px;
   color: #292929;
   margin: 50px 0px -8px 0px;
   line-height: 0px;
 }
+@media (max-width: 1200px) {
+  .players p {
+    font-size: 24px;
+    margin: 30px 0 -8px;
+    line-height: 1.2;
+  }
+}
 .players .underline {
   border-radius: 50px;
   display: inline-block;
   width: 700px;
   border-bottom: solid 3px #1678d4;
+}
+@media (max-width: 1200px) {
+  .players .underline {
+    width: 80%;
+  }
 }

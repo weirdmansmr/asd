@@ -335,6 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .players p {
     font-size: 26px;
+    line-height: 1.2;
   }
   .players .underline {
     width: 70%;
