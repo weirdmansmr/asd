@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0054a5;
   padding: 80px 0 0 80px;
 }
-@media (max-width: 1201px) {
+@media (max-width: 1200px) {
   .players {
     padding: 80px 0 0 30px;
     font-size: 36px;
@@ -130,9 +130,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 700px;
   border-bottom: solid 3px #1678d4;
 }
-@media (max-width: 1201px) {
+@media (max-width: 1200px) {
   .players .underline {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1200px) {
   .contacts__container .sports__palace {
     flex-direction: column-reverse;
+    margin: 0;
   }
 }
 .contacts__container .sports__palace img {
@@ -183,10 +184,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
   font-weight: 400;
 }
+@media (max-width: 1200px) {
+  .contacts__container .contacts__text {
+    height: auto;
+  }
+}
 @media (max-width: 600px) {
   .contacts__container .contacts__text {
     width: calc(100% - 20px);
-    height: auto;
     margin: 0 10px 35px;
     font-size: 16px;
   }
