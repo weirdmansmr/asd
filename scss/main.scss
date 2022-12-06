@@ -74,6 +74,7 @@ body {
     @media (max-width: 1200px) {
         height: max-content;
     }
+    
 }
 .swiper-pagination {
     display: inline-block;
@@ -89,6 +90,10 @@ body {
         line-height: 20px;
         background-color: #57b9fa;
         opacity: .4;
+        @media (max-width: 600px) {
+            width: 12px;
+            height: 12px;
+        }
     }
     .swiper-pagination-bullet-active {
         opacity: 1;
@@ -113,7 +118,11 @@ body {
         padding: 15px 30px 15px 30px;
         border-radius: 50px 0px 50px 0px;
         @media (max-width: 1200px) {
-            font-size: 45px;
+            font-size: 36px;
+            padding: 10px 20px 10px 20px;
+        }
+        @media (max-width: 600px) {
+            font-size: 24px;
         }
     }
     img {
@@ -159,6 +168,10 @@ swiper-rtl .swiper-button-next::after {
         width: 80%;
         margin: auto
     }
+    @media (max-width: 600px) {
+        width: 95%;
+        margin: auto
+    }
     h2 {
         font-size: 2rem;
         font-family: monospace;
@@ -181,11 +194,17 @@ swiper-rtl .swiper-button-next::after {
             grid-template-areas: unset;
             grid-template-rows: auto;
         }
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
         .img_1 {
             grid-area: img1; 
             @include Area_w_h($a: 100%, $b: 360px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
+            }
+            @media (max-width: 600px) {
+                width: 90%;
             }
          }
         .img_2 {
@@ -194,13 +213,18 @@ swiper-rtl .swiper-button-next::after {
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
             }
+            @media (max-width: 600px) {
+                width: 90%;
+            }
          }
         .img_3 {
             grid-area: img3; 
             @include Area_w_h($a: 100%, $b: 240px);
             @media (max-width: 1200px) {
-                @include Area_w_h_mob;
-                
+                @include Area_w_h_mob; 
+            }
+            @media (max-width: 600px) {
+                width: 90%;
             }
          }
         .img_4 {
@@ -209,12 +233,18 @@ swiper-rtl .swiper-button-next::after {
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
             }
+            @media (max-width: 600px) {
+                width: 90%;
+            }
          }
         .img_5 {
             grid-area: img5; 
             @include Area_w_h($a: 100%, $b: 240px);
             @media (max-width: 1200px) {
                 @include Area_w_h_mob;
+            }
+            @media (max-width: 600px) {
+                width: 90%;
             }
          }
         .gall_img {

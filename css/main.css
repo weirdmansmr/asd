@@ -55,6 +55,12 @@ body {
   background-color: #57b9fa;
   opacity: 0.4;
 }
+@media (max-width: 600px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+}
 .swiper-pagination .swiper-pagination-bullet-active {
   opacity: 1;
 }
@@ -81,7 +87,13 @@ body {
 }
 @media (max-width: 1200px) {
   .swiper-slide p {
-    font-size: 45px;
+    font-size: 36px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .swiper-slide p {
+    font-size: 24px;
   }
 }
 .swiper-slide img {
@@ -142,6 +154,12 @@ swiper-rtl .swiper-button-next::after {
     margin: auto;
   }
 }
+@media (max-width: 600px) {
+  .gallery {
+    width: 95%;
+    margin: auto;
+  }
+}
 .gallery h2 {
   font-size: 2rem;
   font-family: monospace;
@@ -164,6 +182,11 @@ swiper-rtl .swiper-button-next::after {
     grid-template-rows: auto;
   }
 }
+@media (max-width: 600px) {
+  .gallery .photos {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 .gallery .photos .img_1 {
   grid-area: img1;
   width: 100%;
@@ -182,6 +205,11 @@ swiper-rtl .swiper-button-next::after {
   .gallery .photos .img_1 .gall_img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery .photos .img_1 {
+    width: 90%;
   }
 }
 .gallery .photos .img_2 {
@@ -204,6 +232,11 @@ swiper-rtl .swiper-button-next::after {
     height: 100%;
   }
 }
+@media (max-width: 600px) {
+  .gallery .photos .img_2 {
+    width: 90%;
+  }
+}
 .gallery .photos .img_3 {
   grid-area: img3;
   width: 100%;
@@ -222,6 +255,11 @@ swiper-rtl .swiper-button-next::after {
   .gallery .photos .img_3 .gall_img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery .photos .img_3 {
+    width: 90%;
   }
 }
 .gallery .photos .img_4 {
@@ -244,6 +282,11 @@ swiper-rtl .swiper-button-next::after {
     height: 100%;
   }
 }
+@media (max-width: 600px) {
+  .gallery .photos .img_4 {
+    width: 90%;
+  }
+}
 .gallery .photos .img_5 {
   grid-area: img5;
   width: 100%;
@@ -262,6 +305,11 @@ swiper-rtl .swiper-button-next::after {
   .gallery .photos .img_5 .gall_img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery .photos .img_5 {
+    width: 90%;
   }
 }
 .gallery .photos .gall_img {

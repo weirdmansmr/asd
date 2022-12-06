@@ -75,11 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 .players {
-  margin-left: 55px;
   font-size: 60px;
   font-family: "FuturaDemic";
-  margin-top: 30px;
   color: #0054a5;
+  padding: 30px 0 0 80px;
+}
+@media (max-width: 1200px) {
+  .players {
+    font-size: 36px;
+    padding: 80px 0 0 30px;
+  }
 }
 .players p {
   font-size: 40px;
@@ -87,10 +92,23 @@ h1, h2, h3, h4, h5, h6 {
   margin: 50px 0px -8px 0px;
   line-height: 0px;
 }
+@media (max-width: 1200px) {
+  .players p {
+    font-size: 24px;
+    margin: 30px 0 -8px;
+    line-height: 1.2;
+  }
+}
 .players .underline {
+  border-radius: 50px;
   display: inline-block;
   width: 700px;
   border-bottom: solid 3px #1678d4;
+}
+@media (max-width: 1200px) {
+  .players .underline {
+    width: 80%;
+  }
 }
 
 .content {
@@ -116,8 +134,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-items: center;
   gap: 20px;
   position: relative;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+@media (max-width: 600px) {
+  .multimedia .photos {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: start;
+  }
 }
 .multimedia .photos .gall_img {
   border-radius: 10px;
@@ -125,6 +148,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 300px;
   transition: 0.2s;
   position: relative;
+}
+@media (max-width: 600px) {
+  .multimedia .photos .gall_img {
+    width: 90vw;
+  }
 }
 .multimedia .photos .img_text {
   margin: 0;
@@ -139,6 +167,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .multimedia .photos .img_text {
+    width: 90vw;
+  }
 }
 .multimedia .photos .img_text:hover {
   opacity: 1;
